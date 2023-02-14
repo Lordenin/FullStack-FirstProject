@@ -1,0 +1,33 @@
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+    
+}
+
+.content{
+    width: 100%;
+
+}
+.badge button{
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+p{
+    text-align: end;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 0;
+}
+
+mat-card{
+    margin-top: .8rem;
+    padding: .2rem;
+}

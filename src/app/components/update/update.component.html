@@ -1,0 +1,29 @@
+<form>
+    <h1>Atualizando novo ToDo</h1>
+
+    <mat-form-field class="data-finalizar" appearance="fill">
+        <mat-label>DATA PARA FINALIZAR</mat-label>
+        <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3" disabled>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
+        <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+      </mat-form-field>
+
+      <div class="forms">
+      <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input [(ngModel)]="todo.titulo" name="todo.titulo" matInput placeholder="Estudar Spring">
+      </mat-form-field>
+
+      <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Estudar Spring boot 2">
+      </mat-form-field>
+    </div>
+
+    <div class="buttons">
+        <button (click)="update()" mat-stroked-button color="primary">Atualizar</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+</form>
+
